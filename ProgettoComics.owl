@@ -76,6 +76,10 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#haPersonaggio">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#compostaDa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#haPersonaggio"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
