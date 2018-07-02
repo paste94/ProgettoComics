@@ -1,0 +1,809 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17"
+     xmlns:schema="http://schema.org"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#amico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#amico">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#colore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#colore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#compostaDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#compostaDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#crea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#crea">
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#disegna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#disegna">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#crea"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Disegnatore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#haPersonaggio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#haPersonaggio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#nazionalità -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#nazionalità">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:range rdf:resource="http://schema.org/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#piuForteDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#piuForteDi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblica">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#stampa"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblicatoDa"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblicatoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblicatoDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#scrive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#scrive">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#crea"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scrittore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#stampa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#stampa">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#stampatoDa"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#stampatoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#stampatoDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#anno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#anno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeriTotali -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeriTotali">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pagine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pagine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Country -->
+
+    <owl:Class rdf:about="http://schema.org/Country"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo">
+        <rdfs:comment>Rappresenta il formato in cui il fumetto è posseduto</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Antagonista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Antagonista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Antieroe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Antieroe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bonellide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bonellide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartaceo"/>
+        <rdfs:comment>Rappresenta le dimensioni dell&apos;albo standard dei fumetti Bonelli</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Brosurato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Brosurato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartaceo"/>
+        <rdfs:comment>Formato brossurato con copertina morbida</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartaceo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartaceo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo"/>
+        <rdfs:comment>Rappresenta il formato cartaceo, fisico dell&apos;albo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartonato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartonato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartaceo"/>
+        <rdfs:comment>Grande formato con copertina rigida</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colore">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bianco_e_Nero"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colori"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scala_di_Grigi"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Classe che rappresenta il tipo di colorazione effettuata nell&apos;albo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Comico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Comico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Creatore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Creatore">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Digitale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Digitale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Albo"/>
+        <rdfs:comment>Albo posseduto in versione digitale</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Disegnatore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Disegnatore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Creatore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreDiSupereroi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreDiSupereroi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblica"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Supereroi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreIndipendente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreIndipendente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblica"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Indipendente"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreManga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreManga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#pubblica"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Manga"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Eroe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Eroe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#amico"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Rappresenta l&apos;eroe del fumetto o della serie di fumetti. Un eroe è tale solo se possiede degli amici.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#GraphicNovel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#GraphicNovel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeriTotali"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Horror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Horror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Indipendente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Indipendente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Manga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Manga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#MaxiSerie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#MaxiSerie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeriTotali"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#MiniSerie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#MiniSerie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#compostaDa"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#compostaDa"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Protagonista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Protagonista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Romantico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Romantico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scrittore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scrittore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Creatore"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Spillato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Spillato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartaceo"/>
+        <rdfs:comment>Formato classico dei mensili americani</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Supereroi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Supereroi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#MaxiSerie"/>
+        <compostaDa rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1"/>
+        <compostaDa rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_2"/>
+        <numeriTotali rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1002</numeriTotali>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Spillato"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Supereroi"/>
+        <colore rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colori"/>
+        <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bibbo"/>
+        <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Superman"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Spillato"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Supereroi"/>
+        <colore rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colori"/>
+        <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lex_Luthor"/>
+        <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lois_Lane"/>
+        <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Superman"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bao_Publishing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bao_Publishing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Editore"/>
+        <pubblica rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bianco_e_Nero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bianco_e_Nero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bibbo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bibbo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+        <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Canada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Canada">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#DC_Comics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#DC_Comics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreDiSupereroi"/>
+        <pubblica rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1"/>
+        <pubblica rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Giappone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Giappone">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Italia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Italia">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Jerry_Siegel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Jerry_Siegel">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Canada"/>
+        <scrive rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Joe_Shuster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Joe_Shuster">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <disegna rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1"/>
+        <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartonato"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+        <colore rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scala_di_Grigi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling_Seire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling_Seire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#GraphicNovel"/>
+        <compostaDa rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling"/>
+        <numeriTotali rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numeriTotali>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Krypton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Krypton">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lex_Luthor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lex_Luthor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Antagonista"/>
+        <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA"/>
+        <piuForteDi rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bibbo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lois_Lane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lois_Lane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+        <amico rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Superman"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Masashi_Kishimoto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Masashi_Kishimoto">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <disegna rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto_1"/>
+        <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Giappone"/>
+        <scrive rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+        <compostaDa rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto_1"/>
+        <numeriTotali rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</numeriTotali>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Brosurato"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Manga"/>
+        <colore rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bianco_e_Nero"/>
+        <anno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</anno>
+        <pagine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">192</pagine>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Planet_Manga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Planet_Manga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#EditoreManga"/>
+        <pubblica rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Naruto_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scala_di_Grigi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scala_di_Grigi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Superman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Superman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Eroe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Protagonista"/>
+        <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Krypton"/>
+        <piuForteDi rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lex_Luthor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA">
+        <rdf:type rdf:resource="http://schema.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Zerocalcare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Zerocalcare">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
+        <disegna rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling"/>
+        <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Italia"/>
+        <scrive rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Kobane_Calling"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
