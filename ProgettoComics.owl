@@ -4,6 +4,7 @@
      xmlns:schema="http://schema.org"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:schema1="http://schema.org/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -68,8 +69,18 @@
     <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#crea -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#crea">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#creatoDa"/>
         <rdfs:domain rdf:resource="http://schema.org/Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#creatoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#creatoDa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+        <rdfs:range rdf:resource="http://schema.org/Person"/>
     </owl:ObjectProperty>
     
 
@@ -177,6 +188,24 @@
     
 
 
+    <!-- http://schema.org/alternateName -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/alternateName"/>
+    
+
+
+    <!-- http://schema.org/familyName -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/familyName"/>
+    
+
+
+    <!-- http://schema.org/givenName -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/givenName"/>
+    
+
+
     <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#anno -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#anno">
@@ -186,10 +215,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#nomeFumetto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#nomeFumetto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeriTotali -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeriTotali">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeroFumetto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#numeroFumetto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -584,6 +631,10 @@
         <colore rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Colori"/>
         <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bibbo"/>
         <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Superman"/>
+        <anno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1938</anno>
+        <nomeFumetto>Action Comics 1</nomeFumetto>
+        <numeroFumetto rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numeroFumetto>
+        <pagine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</pagine>
     </owl:NamedIndividual>
     
 
@@ -597,6 +648,10 @@
         <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lex_Luthor"/>
         <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lois_Lane"/>
         <haPersonaggio rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Superman"/>
+        <anno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1938</anno>
+        <nomeFumetto>Action Comics 2</nomeFumetto>
+        <numeroFumetto rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</numeroFumetto>
+        <pagine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</pagine>
     </owl:NamedIndividual>
     
 
@@ -623,6 +678,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bibbo">
         <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Personaggio"/>
         <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA"/>
+        <schema1:familyName>Bibbowski</schema1:familyName>
+        <schema1:givenName>Bibbo</schema1:givenName>
     </owl:NamedIndividual>
     
 
@@ -675,6 +732,9 @@
         <rdf:type rdf:resource="http://schema.org/Person"/>
         <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Canada"/>
         <scrive rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1"/>
+        <scrive rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_2"/>
+        <schema1:familyName>Siegel</schema1:familyName>
+        <schema1:givenName>Jerry</schema1:givenName>
     </owl:NamedIndividual>
     
 
@@ -684,7 +744,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Joe_Shuster">
         <rdf:type rdf:resource="http://schema.org/Person"/>
         <disegna rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_1"/>
+        <disegna rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Action_Comics_2"/>
         <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA"/>
+        <schema1:familyName>Shuster</schema1:familyName>
+        <schema1:givenName>Joe</schema1:givenName>
     </owl:NamedIndividual>
     
 
@@ -695,6 +758,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Cartonato"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Fumetto"/>
         <colore rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Scala_di_Grigi"/>
+        <anno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anno>
+        <nomeFumetto>Kobane Calling</nomeFumetto>
+        <pagine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</pagine>
     </owl:NamedIndividual>
     
 
@@ -723,6 +789,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Antagonista"/>
         <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#USA"/>
         <piuForteDi rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bibbo"/>
+        <schema1:familyName>Luthor</schema1:familyName>
+        <schema1:givenName>Alexander</schema1:givenName>
     </owl:NamedIndividual>
     
 
@@ -764,6 +832,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Manga"/>
         <colore rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Bianco_e_Nero"/>
         <anno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</anno>
+        <nomeFumetto>Naruto 1</nomeFumetto>
+        <numeroFumetto rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numeroFumetto>
         <pagine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">192</pagine>
     </owl:NamedIndividual>
     
@@ -793,6 +863,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Protagonista"/>
         <nazionalità rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Krypton"/>
         <piuForteDi rdf:resource="http://www.semanticweb.org/ricca/ontologies/2018/5/untitled-ontology-17#Lex_Luthor"/>
+        <schema1:alternateName>Kal-El</schema1:alternateName>
+        <schema1:familyName>Kent</schema1:familyName>
+        <schema1:givenName>Clark</schema1:givenName>
+        <schema1:givenName>Superman</schema1:givenName>
     </owl:NamedIndividual>
     
 
